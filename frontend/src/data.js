@@ -60,3 +60,22 @@ export const sample_foods = [
         tags: ['Fastfood', 'Pizza', 'Lunch'],
     },
 ]
+
+export const sample_users = [
+    {
+        id: 1,
+        name: 'Amar Kumar',
+        email: 'amar@gmail.com',
+        password: '123456',
+        address: 'Bihar In',
+        isAdmin: false,
+    },
+    {
+        id: 2,
+        name: 'Aman Raj',
+        email: 'raj@gmail.com',
+        password: '1234567',
+        address: 'Nashik In',
+        isAdmin: true,
+    },
+]

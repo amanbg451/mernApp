@@ -6,3 +6,6 @@ export const search = async searchTerm =>
     sample_foods.filter(item =>
         item.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
+
+export const getById = async foodId =>
+sample_foods.find(item => item.id === foodId);
