@@ -3,6 +3,7 @@ import classes from "./header.module.css"
 import { Link } from 'react-router-dom';
 import { useCart } from '../../hooks/useCart';
 import { useAuth } from '../../hooks/useAuth';
+import logo from "../../assets/sLogo.png"
 export default function Header() {
     const { user, logout } = useAuth();
     const { cart } = useCart();
@@ -11,7 +12,7 @@ export default function Header() {
         <header className={classes.header}>
             <div className={classes.container}>
                 <Link to="/" className={classes.logo}>
-                    Logo
+                    <img className="photo" src={logo} alt="logo" style={{height:70, width:70}}/>
                 </Link>
                 <nav>
                     <ul>
