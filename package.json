@@ -1,0 +1,14 @@
+{
+  "name": "mernapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd backend && npm start",
+    "build": "cd frontend && npm run build",
+    "postbuild": "move /Y frontend\\build backend\\src\\public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
